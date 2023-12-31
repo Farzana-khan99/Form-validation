@@ -50,6 +50,7 @@ function validation(){
     document.getElementById("password").style.color = "red";
     document.getElementById("password").style.fontWeight = "bold";
     return false;
+       
   }
 
   if ( confirmPass == " ") {
