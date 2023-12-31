@@ -7,17 +7,88 @@
     <title>Document</title>
 </head>
 
+<style>
+    text{
+        text-transform: capitalize;
+    }
+  h2{
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+    .signUp-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .signUp-form label{
+        display: block;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .signUp-form input{
+        width: 100%;
+        border: none;
+        outline: none;
+        background: aliceblue;
+        padding: 10px 20px;
+        margin: 20px 0;
+    }
+    button{
+        border-radius: 8px;
+        font-size: 18px;
+        padding: 10px 20px;
+        background: green;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+        color: #fff;
+    }
+</style>
 <body>
 
 
-    <div>
-        <h2>form validation from html and javascript</h2>
-        <form action="">
+    <div class="signUp-form">
+       
+        <form action="#" onsubmit="validation()">
+             <h2>form validation from html and javascript</h2>
             <div>
-                <input type="text" name="" id="">
+                <label for="">username </label>
+                <input  autocomplete="off" type="text" name="" id="user">
+                <span id = userName></span>
             </div>
+
+            <div>
+                <label for="">password </label>
+                <input  autocomplete="off" type="text" name="" id="pass">
+                <span id =password></span>
+            </div>
+
+            <div>
+                <label for="">Confirm password </label>
+                <input  autocomplete="off" type="text" name="" id="confpass">
+                <span id =confirmPass></span>
+            </div>
+
+            <div>
+                <label for="">Mobile</label>
+                <input  autocomplete="off" type="text" name="" id="number">
+                <span id =mobileNum></span>
+            </div>
+
+            
+            <div>
+                <label for="">Email</label>
+                <input  autocomplete="off" type="text" name="" id="emails">
+                <span id =Email></span>
+            </div>
+
+            <button type="submit" value="submit">submit</button>
         </form>
     </div>
+       
     <script src="./index.js"></script>
 </body>
 
